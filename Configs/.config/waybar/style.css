@@ -3,7 +3,7 @@
     border-radius: 0px;
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 10px;
+    font-size: 20px;
     min-height: 10px;
 }
 
@@ -97,8 +97,6 @@ tooltip {
 #backlight,
 #battery,
 #bluetooth,
-#custom-cliphist,
-#clock,
 #custom-cpuinfo,
 #cpu,
 #custom-gpuinfo,
@@ -109,15 +107,11 @@ tooltip {
 #mpris,
 #network,
 #custom-notifications,
-#custom-power,
 #pulseaudio,
 #custom-spotify,
-#taskbar,
-#custom-theme,
 #tray,
 #custom-updates,
 #custom-wallchange,
-#custom-wbar,
 #window,
 #workspaces,
 #custom-l_end,
@@ -132,6 +126,27 @@ tooltip {
     margin: 4px 0px 4px 0px;
     padding-left: 4px;
     padding-right: 4px;
+}
+#clock,
+#custom-cliphist{
+    padding-right: 30px;
+
+}
+#custom-power{
+    padding-right: 30px;
+
+}
+#taskbar{
+    padding-right: 30px;
+
+}
+#custom-theme{
+    padding-right: 30px;
+
+}
+#custom-wbar{
+    padding-right: 30px;
+
 }
 
 #workspaces,
