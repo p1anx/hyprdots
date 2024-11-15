@@ -1,9 +1,10 @@
 * {
     border: none;
     border-radius: 0px;
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Fira Code Nerd Font";
     font-weight: bold;
-    font-size: ${s_fontpx}px;
+    /*font-size: ${s_fontpx}px;*/
+    font-size: 20px;
     min-height: 10px;
 }
 
@@ -148,4 +149,46 @@ ${modules_ls}
     border-radius: ${x1lc_radius}px ${x2lc_radius}px ${x3lc_radius}px ${x4lc_radius}px;
     margin-${x3}: ${e_margin}px;
     padding-${x3}: ${e_paddin}px;
+}
+
+#backlight,
+#battery,
+#bluetooth,
+#custom-cpuinfo,
+#cpu,
+#custom-gpuinfo,
+#idle_inhibitor,
+#custom-keybindhint,
+#language,
+#memory,
+#mpris,
+#network,
+#custom-notifications,
+#pulseaudio,
+#custom-spotify,
+#tray,
+#custom-updates,
+#custom-wallchange,
+#window,
+#workspaces,
+#clock,
+#custom-cliphist{
+    padding-right: 30px;
+
+}
+#custom-power{
+    padding-right: 30px;
+
+}
+#taskbar{
+    padding-right: 30px;
+
+}
+#custom-theme{
+    padding-right: 30px;
+
+}
+#custom-wbar{
+    padding-right: 30px;
+
 }

@@ -72,8 +72,8 @@ if [ -z $w_height ] ; then
 fi
 
 export i_size=$(( w_height*6/10 ))
-if [ $i_size -lt 12 ] ; then
-    export i_size="12"
+if [ $i_size -lt 20 ] ; then
+    export i_size="20"
 fi
 
 export i_theme="$(
@@ -81,8 +81,8 @@ export i_theme="$(
 grep 'gsettings set org.gnome.desktop.interface icon-theme' "${hydeThemeDir}/hypr.theme" | awk -F "'" '{print $((NF - 1))}'
 )"
 export i_task=$(( w_height*6/10 ))
-if [ $i_task -lt 16 ] ; then
-    export i_task="16"
+if [ $i_task -lt 20 ] ; then
+    export i_task="20"
 fi
 export i_priv=$(( w_height*6/13 ))
 if [ $i_priv -lt 12 ] ; then
