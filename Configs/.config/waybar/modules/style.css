@@ -4,7 +4,7 @@
     font-family: "Fira Code Nerd Font";
     font-weight: bold;
     /*font-size: ${s_fontpx}px;*/
-    font-size: 20px;
+    font-size: ${i_size}px;
     min-height: 10px;
 }
 

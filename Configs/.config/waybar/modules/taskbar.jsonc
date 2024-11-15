@@ -1,8 +1,8 @@
 	"wlr/taskbar": {
 		"format": "{icon}",
 		"rotate": ${r_deg},
-		// "icon-size": ${i_task},
-		"icon-size": 30,
+		"icon-size": ${i_task},
+		// "icon-size": 30,
 		"icon-theme": "${i_theme}",
         "spacing": 0,
 		"tooltip-format": "{title}",
