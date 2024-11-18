@@ -104,15 +104,16 @@ gen_mod()
     local mod=""
 
     mod=`grep '^1|' $conf_ctl | cut -d '|' -f ${col}`
-    mod="${mod//(/"custom/l_end"}"
-    mod="${mod//)/"custom/r_end"}"
-    mod="${mod//[/"custom/sl_end"}"
-    mod="${mod//]/"custom/sr_end"}"
-    mod="${mod//\{/"custom/rl_end"}"
-    mod="${mod//\}/"custom/rr_end"}"
+    # mod="${mod//(/"custom/l_end"}"
+    # mod="${mod//)/"custom/r_end"}"
+    # mod="${mod//[/"custom/sl_end"}"
+    # mod="${mod//]/"custom/sr_end"}"
+    # mod="${mod//\{/"custom/rl_end"}"
+    # mod="${mod//\}/"custom/rr_end"}"
     mod="${mod// /"\",\""}"
 
-    echo -e "\t\"modules-${pos}\": [\"custom/padd\",\"${mod}\",\"custom/padd\"]," >> $conf_file
+    # echo -e "\t\"modules-${pos}\": [\"custom/padd\",\"${mod}\",\"custom/padd\"]," >> $conf_file
+    echo -e "\t\"modules-${pos}\": [\"${mod}\"]," >> $conf_file
     write_mod=`echo $write_mod $mod`
 }
 

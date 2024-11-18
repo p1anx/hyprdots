@@ -1,0 +1,5 @@
+    "custom/launcher":{
+        "format": "",
+        "on-click": "rofi -show drun",
+        "on-click-right": "rofi -show run"
+    },

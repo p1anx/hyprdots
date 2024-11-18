@@ -20,7 +20,7 @@ tooltip {
     border-radius: ${t_radius}px;
     border-width: 0px;
 }
-
+ 
 #workspaces button {
     box-shadow: none;
 	text-shadow: none;
@@ -173,22 +173,32 @@ ${modules_ls}
 #workspaces,
 #clock,
 #custom-cliphist{
-    padding-right: 30px;
+    padding-right: 20px;
 
 }
 #custom-power{
-    padding-right: 30px;
+    padding-right: 20px;
+    /*padding-left: 20px;*/
 
 }
 #taskbar{
-    padding-right: 30px;
+    padding-right: 20px;
 
 }
 #custom-theme{
-    padding-right: 30px;
+    padding-right: 20px;
 
 }
 #custom-wbar{
-    padding-right: 30px;
+    padding-right: 20px;
 
+}
+#custom-launcher {
+    /*font-size: 20px;*/
+    margin: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    transition: none;
+    color: rgb(134, 216, 231);
 }
