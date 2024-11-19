@@ -50,8 +50,8 @@ i_override="configuration {icon-theme: \"${i_override}\";}"
 #=========================================================
 
 menu_edit=()
-menu_edit+=("mybin")
 menu_edit+=("hyprland")
+menu_edit+=("mybin")
 menu_edit+=("vim")
 menu_edit+=("nvim")
 menu_edit+=("kitty")
@@ -59,7 +59,7 @@ menu_edit+=("rofi")
 menu_edit+=("waybar")
 menu_edit+=(".zshrc")
 menu_edit+=(".bashrc")
-menu_edit+=("nvim")
+menu_edit+=("tmux")
 menu_edit+=("nvim")
 #// launch rofi
 menu() {
@@ -103,8 +103,7 @@ main() {
   ".zshrc") file="$HOME/.zshrc" ;;
   ".bashrc") file="$HOME/.bashrc" ;;
   "mybin") file="$scrDir/quick_edit.sh" ;;
-  10) file="$configs/Settings.conf" ;;
-  11) file="$configs/Keybinds.conf" ;;
+  "tmux") file="$HOME/.tmux.conf" ;;
   *) return ;; # Do nothing for invalid choices
   esac
 
