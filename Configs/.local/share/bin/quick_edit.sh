@@ -8,6 +8,7 @@ tty=kitty
 
 # Paths to configuration directories
 configs="$HOME/.config"
+GIT_PATH=$HOME/0-code
 
 scrDir="$(dirname "$(realpath "$0")")"
 source "${scrDir}/globalcontrol.sh"
@@ -60,7 +61,7 @@ menu_edit+=("waybar")
 menu_edit+=(".zshrc")
 menu_edit+=(".bashrc")
 menu_edit+=("tmux")
-menu_edit+=("nvim")
+menu_edit+=("git-hyprdots")
 #// launch rofi
 menu() {
   cat <<EOF
@@ -104,6 +105,7 @@ main() {
   ".bashrc") file="$HOME/.bashrc" ;;
   "mybin") file="$scrDir/quick_edit.sh" ;;
   "tmux") file="$HOME/.tmux.conf" ;;
+  "git-hyprdots") file="$GIT_PATH/hyprdots/" ;;
   *) return ;; # Do nothing for invalid choices
   esac
 
